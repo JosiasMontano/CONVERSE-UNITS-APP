@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Conversor de Unidades</title>
+   <link rel="stylesheet" href="converse.css">     
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Unidades</h1>
+    <label for="valor">Valor:</label>
+    <input type="number" id="valor" value="0">
+
+    <label for="unidad-original">Unidad Original:</label>
+    <select id="unidad-original">
+      <optgroup label="Masa">
+        <option value="kg">Kilogramos (kg)</option>
+        <option value="g">Gramos (g)</option>
+        <option value="lb">Libras (lb)</option>
+      </optgroup>
+      <optgroup label="Distancia">
+        <option value="m">Metros (m)</option>
+        <option value="cm">Centímetros (cm)</option>
+        <option value="km">Kilómetros (km)</option>
+        <option value="mi">Millas (mi)</option>
+      </optgroup>
+      <optgroup label="Volumen">
+        <option value="l">Litros (l)</option>
+        <option value="ml">Mililitros (ml)</option>
+        <option value="gal">Galones (gal)</option>
+      </optgroup>
+    </select>
+
+    <label for="unidad-destino">Unidad Destino:</label>
+    <select id="unidad-destino">
+      <optgroup label="Masa">
+        <option value="kg">Kilogramos (kg)</option>
+        <option value="g">Gramos (g)</option>
+        <option value="lb">Libras (lb)</option>
+      </optgroup>
+      <optgroup label="Distancia">
+        <option value="m">Metros (m)</option>
+        <option value="cm">Centímetros (cm)</option>
+        <option value="km">Kilómetros (km)</option>
+        <option value="mi">Millas (mi)</option>
+      </optgroup>
+      <optgroup label="Volumen">
+        <option value="l">Litros (l)</option>
+        <option value="ml">Mililitros (ml)</option>
+        <option value="gal">Galones (gal)</option>
+      </optgroup>
+    </select>
+
+    <button onclick="convertir()">Convertir</button>
+
+    <div id="resultado"></div>
+    </div>
+  <script src="converse.js"></script> 
+</body>
+</html>
